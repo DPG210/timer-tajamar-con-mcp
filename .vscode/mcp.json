@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "timer-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/packages/mcp-server/dist/index.js"],
+      "env": {
+        "TIMER_API_URL": "https://apitimerstesting.azurewebsites.net/"
+      }
+    }
+  }
+}

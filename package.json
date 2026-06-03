@@ -1,0 +1,16 @@
+{
+  "name": "timer-tajamar",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/app",
+    "packages/mcp-server"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev -w timer-tajamar-v2",
+    "build:app": "npm run build -w timer-tajamar-v2",
+    "test:app": "npm run test -w timer-tajamar-v2",
+    "dev:mcp": "npm run dev -w timer-mcp-server",
+    "build:mcp": "npm run build -w timer-mcp-server"
+  }
+}
