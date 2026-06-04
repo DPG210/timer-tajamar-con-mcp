@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .claude/hooks/inject-mcp-context.ps1" } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "mcp__timer-mcp__.*", "hooks": [ { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .claude/hooks/guard-mcp-readonly.ps1" } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .claude/hooks/run-tests-on-change.ps1" } ] }
+    ]
+  }
+}
