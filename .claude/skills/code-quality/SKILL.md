@@ -1,5 +1,5 @@
 ---
-name: code-quality-reviewer
+name: code-quality
 description: Professional code review and quality assurance knowledge. Use this skill whenever the user asks for help reviewing code, establishing code review standards, writing review comments, evaluating pull requests, enforcing coding standards, or improving code maintainability. Trigger on any mention of code review, pull request review, PR review, code quality, code smells, refactoring, tech debt, coding standards, linting, static analysis, complexity metrics, naming conventions, or SOLID principles. Also use when the user shares code and asks for feedback, or when reviewing code produced by other agents in the orchestrator system.
 ---
 
